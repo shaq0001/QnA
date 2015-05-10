@@ -1,12 +1,5 @@
-<div class="well">
-<h4> Rails is an open-source web framework that's optimized for programmer happiness and sustainable productivity
-</h4>
-<p>
-Rails is an open-source web framework that's optimized for programmer happiness and sustainable productivity
-</p>
-</div>
-
 <div class="container">
+<div class="lead well">
  	<div class="media">
  		<div class="media-left">
  			<a href="#">
@@ -17,12 +10,19 @@ Rails is an open-source web framework that's optimized for programmer happiness 
  	 	<h4 class="media-heading">user@email.com Asked</h4>
  	 	orem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augu.
  	</div>
-<div>
-	<a href="/questions/12" class="btn btn-success btn-xs">View Answers</a>
+ 	</div>
+</div>
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2"></div>
+
+	<div>
+		<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#new-answer-modal">Submit new answer</a>
+
+	</div>
+
+		<%= render 'home/new_answer_form' %>
 
 </div>
-</div>
-
 <div class="media">
  		<div class="media-left">
  			<a href="#">
@@ -33,10 +33,7 @@ Rails is an open-source web framework that's optimized for programmer happiness 
  	 	<h4 class="media-heading">user@email.com Asked</h4>
  	 	orem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augu.
  	</div>
- 	<div>
-	<a href="/questions/12" class="btn btn-success btn-xs">View Answers</a>
-
-</div>
+ 	</div>
  	<div class="media">
  		<div class="media-left">
  			<a href="#">
@@ -47,7 +44,4 @@ Rails is an open-source web framework that's optimized for programmer happiness 
  	 	<h4 class="media-heading">user@email.com Asked</h4>
  	 	orem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augu.
  	</div>
- 	<div>
-	<a href="/questions/12" class="btn btn-success btn-xs">View Answers</a>
-
-</div>
+ 	 	</div>
