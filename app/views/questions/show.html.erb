@@ -1,0 +1,47 @@
+<div class="container">
+<div class="lead well">
+ 	<div class="media">
+ 		<div class="media-left">
+ 			<a href="#">
+ 	 			<img class="media-object" src="<%= @quesetion.gravatar %>">
+ 				</a>
+ 	</div>
+ 	 <div class="media-body">
+ 	 	<h4 class="media-heading"><%= @quesetion.email %> asked:</h4>
+ 	 	<%= @quesetion.body %>
+ 	</div>
+ 	</div>
+</div>
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2"></div>
+
+	<div>
+		<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#new-answer-modal">Submit new answer</a>
+
+	</div>
+
+		<%= render 'home/new_answer_form' %>
+
+</div>
+<div class="media">
+ 		<div class="media-left">
+ 			<a href="#">
+ 	 			<img class="media-object" src="https://gravatar.com/avatar/424242">
+ 				</a>
+ 	</div>
+ 	 <div class="media-body">
+ 	 	<h4 class="media-heading">user@email.com Asked</h4>
+ 	 	orem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augu.
+ 	</div>
+ 	</div>
+ 	<div class="media">
+ 		<div class="media-left">
+ 			<a href="#">
+ 	 			<img class="media-object" src="https://gravatar.com/avatar/424242">
+ 				</a>
+ 	</div>
+ 	 <div class="media-body">
+ 	 	<h4 class="media-heading">user@email.com Asked</h4>
+ 	 	orem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augu.
+ 	</div>
+ 	 	</div>
