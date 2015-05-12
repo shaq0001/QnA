@@ -11,7 +11,7 @@ Rails is an open-source web framework that's optimized for programmer happiness 
  	<div class="media">
  		<div class="media-left">
  			<a href="#">
- 	 			<img class="media-object" src=" <%= q.gravatar %>">
+ 	 			<img class="media-object" src="https://www.gravatar.com/avatar/424242">
  				</a>
  			</div>
  	 <div class="media-body">
@@ -22,5 +22,11 @@ Rails is an open-source web framework that's optimized for programmer happiness 
  	 		<div><a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a></div>	
 
  	</div>
+<% end %>
+
+<% if @questions.empty? %>
+<div class="alert alert-info">Nothing here yet, be the first ti ask?
+	
+</div>
 <% end %>
 </div>
