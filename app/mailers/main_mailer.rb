@@ -4,7 +4,7 @@ class MainMailer < ApplicationMailer
   # with the following lookup:
   #
   #   en.main_mailer.notify_question_author.subject
-  #
+  # this is for question mailer module 
   def notify_question_author(answer)
  
     @greeting = "Hi"
