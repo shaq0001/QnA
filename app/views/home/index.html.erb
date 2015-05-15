@@ -5,24 +5,28 @@
 Rails is an open-source web framework that's optimized for programmer happiness and sustainable productivity
 </p>
 </div>
-
+	 
 <div class="container">
-<% @questions.each do |q| %>
- 	<div class="media">
- 		<div class="media-left">
- 			<a href="#">
- 	 			<img class="media-object" src="https://www.gravatar.com/avatar/424242">
- 				</a>
- 			</div>
- 	 <div class="media-body">
- 	 	<h4 class="media-heading"><%= q.email %> </h4>
- 	 		<div><%= time_ago_in_words q.created_at %> ago</div>
- 	 		<div><%= q.body %></div>			
+	<div class="boxes">
+		<% @questions.each do |q| %>
+	 		<div class="media" data-target="<%= question_path(q) %>">
+	 			<div class="media-left">
+	 			<a href="#">
+	 	 			<img class="media-object" src="https://www.gravatar.com/avatar/424242">
+	 				</a>
+	 	</div>
+	 	<div class="media-body">
+	 	 	<h4 class="media-heading"><%= q.email %> </h4>
+	 	 		<div class="time"><%= time_ago_in_words q.created_at %> ago</div>
+	 	 		<div><%= q.body %></div>			
 
- 	 		<div><a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a></div>	
+	 	 		<div><a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a>
 
- 	</div>
-<% end %>
+	 	 		</div>	
+
+	 	</div>
+	<% end %>
+	</div>
 
 <% if @questions.empty? %>
 <div class="alert alert-info">Nothing here yet, be the first ti ask?
